@@ -1,6 +1,8 @@
 import React from 'react';
 import { Github, Mail, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+//@ts-ignore
+import logo from '../assets/logo.png';
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="https://storage.googleapis.com/dualite-testing-424108.appspot.com/images%2F1756977508499-logo.png_1756977511059.png" alt="DigitalNexCode Logo" className="h-10" />
+              <img src={logo} alt="DigitalNexCode Logo" className="h-10" />
             </Link>
             <p className="text-gray-300 text-sm">
               Transforming ideas into digital excellence. Your trusted technology partner in Pretoria, South Africa.

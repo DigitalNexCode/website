@@ -3,6 +3,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronDown, UserCircle, LogOut, Edit, LayoutDashboard, User } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../contexts/AuthContext';
+//@ts-ignore
+import logo from '../assets/logo.png';
 
 interface NavbarProps {
   onBookConsultation: () => void;
@@ -77,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ onBookConsultation }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="https://storage.googleapis.com/dualite-testing-424108.appspot.com/images%2F1756977508499-logo.png_1756977511059.png" alt="DigitalNexCode Logo" className="h-10" />
+            <img src={logo} alt="DigitalNexCode Logo" className="h-10" />
           </Link>
 
           {/* Desktop Navigation */}
