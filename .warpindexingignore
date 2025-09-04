@@ -1,8 +1,19 @@
-# Dependencies and lock files
-node_modules/
+# Major size reducers - these files alone are ~650KB+
 package-lock.json
 yarn.lock
 yarn-error.log
+
+# Dependencies
+node_modules/
+
+# Large binary assets
+src/assets/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
 
 # Build outputs
 dist/
